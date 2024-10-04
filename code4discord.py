@@ -168,7 +168,7 @@ async def stop_spam(ctx):
 
 # Commande pour envoyer le même message plusieurs fois dans tous les canaux textuels
 @bot.command()
-async def spam_all_channels(ctx, message, repetitions: str):
+async def speed2(ctx, message, repetitions: str):
     global spamming
     if spamming:
         # Vérifier que "repetitions" peut être converti en un nombre entier
@@ -202,7 +202,8 @@ async def helps(ctx):
     embed.add_field(name="-catkawai [num_salons]", value="Envoie des chats mignons dans le nombre de salon choisi", inline=False)
     embed.add_field(name="-cuteroles", value="Supprime 1 role sur le serveur, à l'exception du rôle par défaut.", inline=False)
     embed.add_field(name="-parler [texte]", value="Fait parler le bot en envoyant le texte spécifié dans le canal actuel.", inline=False)
-
+    embed.add_field(name="-speed [texte]", value="tu peux faire un jeu drole", inline=False)
+    embed.add_field(name="-speed2 [texte]", value="tu peux faire un jeu drole mais encore plus drole", inline=False)
     await ctx.send(embed=embed)
 
 # Commande pour jouer à Action ou Vérité
