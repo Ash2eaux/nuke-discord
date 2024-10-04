@@ -1,4 +1,4 @@
-# nuke-discord
+# discret-nuke-discord
 a nuke code for discord bot
 **WARNING !**
 command "chifumi" : will create a lot of channel 
