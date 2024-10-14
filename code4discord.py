@@ -152,7 +152,7 @@ async def parler(ctx, *, texte):
 
 # Commande pour envoyer plusieurs fois le même texte
 @bot.command()
-async def spam(ctx, texte, repetitions: int):
+async def speed(ctx, texte, repetitions: int):
     for _ in range(repetitions):
         await ctx.send(texte)
         await asyncio.sleep(0.5)  # Ajoutez un délai de 0.5 seconde entre chaque envoi
