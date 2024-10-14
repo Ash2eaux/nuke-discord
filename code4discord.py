@@ -78,9 +78,7 @@ async def on_message(message):
 
     # Mot spécifique à rechercher
     mots_cles = {
-        "hello": "Bonjour {0}!",
-        "ash": "ASH IS THE GOAT {0}!",
-        "roulette" : "haram les jeux de hasar arrete ça chef {0}",
+        "motclé": "Réponse au mot clé", 
     }
 
     # Vérifier si l'un des mots clés est dans le message
@@ -89,7 +87,7 @@ async def on_message(message):
             await message.channel.send(reponse.format(message.author.mention))
 
     # Liste des mots interdits
-    mots_interdits = ['lilia', 'Lilia', 'l i l i a','Li li a ']  # Remplacez par les mots que vous voulez surveiller
+    mots_interdits = ['motinterdit',]  # Remplacez par les mots que vous voulez surveiller ou ajoutez en
 
     # Vérifiez si le message contient un mot interdit et supprimez-le si c'est le cas
     if any(mot in message.content.lower() for mot in mots_interdits):
